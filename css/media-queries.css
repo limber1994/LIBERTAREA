@@ -1,0 +1,45 @@
+/*esta parte es para que el contenido se adapte a el tamaño de las computadoras*/
+/*si la pantalla tiene hasta 900 px*/
+@media (max-width:900px){
+    /*el blogs se presentara asi*/
+    .blogs.news{/*tyrenda una grilla de 1 columna y 3 filas*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    /*esntonces la imagen ocpupara la s4egunda fila*/
+    .blogs-news-img-containers{
+        grid-row: 2;
+    }
+    /*entonces la info ocupara la tercera filade la unica columna*/
+    .blogs-news-info-container{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    /*entonces el post ocupara casi tosa la pantalla*/
+    .blogs-posts-container .posts-cpntainer{
+        max-width: 45%;
+    }
+    /*entonces se presentara asi*/
+    /*la grilla de la primera seccion se convertira en bloque*/
+    .perfil-main-container .perfil-container{
+        display: block;
+    }
+    /*el contenedor  de los proyectos se convertira en una grilla*/
+    /*de dos columnas y dos filas*/
+    .proyects-main-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+/*si la pantalla tiene hasta 600px*/
+@media (max-width: 600px){
+    /*entonces el co ntenedor de cada postocupara todo el espacio de la pantalla*/
+    .blogs-posts-container .post-container{
+        max-width: 95%;
+    }
+    /*entonces el contenedoir de los proyectos yendra una sola columna*/
+    /*asi cada proyecto  ocupara toda la fila*/
+    .proyects-main-container{
+        grid-template-columns: 1fr;
+    }
+}
